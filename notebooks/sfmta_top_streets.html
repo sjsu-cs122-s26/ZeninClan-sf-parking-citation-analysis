@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3e2e7b25c91c233806a0481fda86a37d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3e2e7b25c91c233806a0481fda86a37d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3e2e7b25c91c233806a0481fda86a37d = L.map(
+                "map_3e2e7b25c91c233806a0481fda86a37d",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5164237ebfeb8f4b47fa990327f3e383 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5164237ebfeb8f4b47fa990327f3e383.addTo(map_3e2e7b25c91c233806a0481fda86a37d);
+        
+    
+            var marker_cluster_c7ec6ef7d17d84acac860625495a3f99 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_cd322c17169d9b3590ecbfb8dcc559da = L.marker(
+                [37.763540000000035, -122.41757999999999],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_44f547d378eb7a6eaa4d1fa5adcaa19f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2bb48eb66c4b6f30d70aea707a5087c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6d5c2e0de38ab3920eab1bae0f724e14 = $(`<div id="html_6d5c2e0de38ab3920eab1bae0f724e14" style="width: 100.0%; height: 100.0%;"><b>MISSION</b><br>Citations: 8,033</div>`)[0];
+                popup_b2bb48eb66c4b6f30d70aea707a5087c.setContent(html_6d5c2e0de38ab3920eab1bae0f724e14);
+            
+        
+
+        marker_cd322c17169d9b3590ecbfb8dcc559da.bindPopup(popup_b2bb48eb66c4b6f30d70aea707a5087c)
+        ;
+
+        
+    
+    
+                marker_cd322c17169d9b3590ecbfb8dcc559da.setIcon(icon_44f547d378eb7a6eaa4d1fa5adcaa19f);
+            
+    
+            var marker_35d60ae733b85844e46d7cc4bf27cfc3 = L.marker(
+                [37.80623536300004, -122.42556457199998],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_7fd56300955b905dc82e5c8e77de3a60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d844cd361ae49abfd85e6d4a385b7f0a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2a963b65d1d6d4bf2fa103a545fe8538 = $(`<div id="html_2a963b65d1d6d4bf2fa103a545fe8538" style="width: 100.0%; height: 100.0%;"><b>VAN NESS</b><br>Citations: 7,904</div>`)[0];
+                popup_d844cd361ae49abfd85e6d4a385b7f0a.setContent(html_2a963b65d1d6d4bf2fa103a545fe8538);
+            
+        
+
+        marker_35d60ae733b85844e46d7cc4bf27cfc3.bindPopup(popup_d844cd361ae49abfd85e6d4a385b7f0a)
+        ;
+
+        
+    
+    
+                marker_35d60ae733b85844e46d7cc4bf27cfc3.setIcon(icon_7fd56300955b905dc82e5c8e77de3a60);
+            
+    
+            var marker_58699aa6ac2ab198794de4b206d05708 = L.marker(
+                [37.776740000000075, -122.41635999999994],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_a7b2aae96bcd6bd32c8ce8c54709b3d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1a92049c94f46ccfaa099722b001dd2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4019947a227d807fac7508beb38eb259 = $(`<div id="html_4019947a227d807fac7508beb38eb259" style="width: 100.0%; height: 100.0%;"><b>MARKET</b><br>Citations: 7,617</div>`)[0];
+                popup_d1a92049c94f46ccfaa099722b001dd2.setContent(html_4019947a227d807fac7508beb38eb259);
+            
+        
+
+        marker_58699aa6ac2ab198794de4b206d05708.bindPopup(popup_d1a92049c94f46ccfaa099722b001dd2)
+        ;
+
+        
+    
+    
+                marker_58699aa6ac2ab198794de4b206d05708.setIcon(icon_a7b2aae96bcd6bd32c8ce8c54709b3d6);
+            
+    
+            var marker_1a0ca4e11006f37af54865b8daef581d = L.marker(
+                [37.77663398900006, -122.39479601499994],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_29b7d0a316a818594b1ead8be29a658b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_023f633d74ada8d7c206b67abd209a91 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3487006b31d201b7b17c5c3b477dc9d0 = $(`<div id="html_3487006b31d201b7b17c5c3b477dc9d0" style="width: 100.0%; height: 100.0%;"><b>700 4TH ST</b><br>Citations: 6,254</div>`)[0];
+                popup_023f633d74ada8d7c206b67abd209a91.setContent(html_3487006b31d201b7b17c5c3b477dc9d0);
+            
+        
+
+        marker_1a0ca4e11006f37af54865b8daef581d.bindPopup(popup_023f633d74ada8d7c206b67abd209a91)
+        ;
+
+        
+    
+    
+                marker_1a0ca4e11006f37af54865b8daef581d.setIcon(icon_29b7d0a316a818594b1ead8be29a658b);
+            
+    
+            var marker_37910c483d9373a7b88cb086b788d427 = L.marker(
+                [37.776536270000065, -122.39560939499995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_a882573bdb93543a228d2d81c2b7af73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd26700b38012975f2746b35bba43e36 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f1be3b3751508e702f94a9d8695561a4 = $(`<div id="html_f1be3b3751508e702f94a9d8695561a4" style="width: 100.0%; height: 100.0%;"><b>331 TOWNSEND</b><br>Citations: 5,751</div>`)[0];
+                popup_cd26700b38012975f2746b35bba43e36.setContent(html_f1be3b3751508e702f94a9d8695561a4);
+            
+        
+
+        marker_37910c483d9373a7b88cb086b788d427.bindPopup(popup_cd26700b38012975f2746b35bba43e36)
+        ;
+
+        
+    
+    
+                marker_37910c483d9373a7b88cb086b788d427.setIcon(icon_a882573bdb93543a228d2d81c2b7af73);
+            
+    
+            var marker_56a79ff39d59ad1b5c3d7f8f808fd2f6 = L.marker(
+                [37.78273121400008, -122.44350347599999],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_f849a1675dcd19c36a21d85c202ab821 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5e4bb552955b25e67b1c4dfaae55206 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_65a9c31227868e379604eeb4997fe034 = $(`<div id="html_65a9c31227868e379604eeb4997fe034" style="width: 100.0%; height: 100.0%;"><b>GEARY</b><br>Citations: 5,498</div>`)[0];
+                popup_e5e4bb552955b25e67b1c4dfaae55206.setContent(html_65a9c31227868e379604eeb4997fe034);
+            
+        
+
+        marker_56a79ff39d59ad1b5c3d7f8f808fd2f6.bindPopup(popup_e5e4bb552955b25e67b1c4dfaae55206)
+        ;
+
+        
+    
+    
+                marker_56a79ff39d59ad1b5c3d7f8f808fd2f6.setIcon(icon_f849a1675dcd19c36a21d85c202ab821);
+            
+    
+            var marker_644982e6b89fa9499d1f0910615b96e8 = L.marker(
+                [37.79532000000006, -122.39393999999999],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_ed204c6c880fd66eef5bc65694c68eff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b9c8c5b99e35b15dcd825b1523322cfe = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_007fc2fad838fe0c68a864b82b1ff1f2 = $(`<div id="html_007fc2fad838fe0c68a864b82b1ff1f2" style="width: 100.0%; height: 100.0%;"><b>EMBARCADERO</b><br>Citations: 4,791</div>`)[0];
+                popup_b9c8c5b99e35b15dcd825b1523322cfe.setContent(html_007fc2fad838fe0c68a864b82b1ff1f2);
+            
+        
+
+        marker_644982e6b89fa9499d1f0910615b96e8.bindPopup(popup_b9c8c5b99e35b15dcd825b1523322cfe)
+        ;
+
+        
+    
+    
+                marker_644982e6b89fa9499d1f0910615b96e8.setIcon(icon_ed204c6c880fd66eef5bc65694c68eff);
+            
+    
+            var marker_912afcbf906ae27db6f879d1a0e4cef8 = L.marker(
+                [37.782620000000065, -122.40810999999997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_2e6ab5b4097ffe846d91be393d00517c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fd6e2eb579cf79ab0a696f0d0f68deb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cb90dc6f20e0c749d9cc6ab7023166a6 = $(`<div id="html_cb90dc6f20e0c749d9cc6ab7023166a6" style="width: 100.0%; height: 100.0%;"><b>MEZZANINE</b><br>Citations: 4,055</div>`)[0];
+                popup_0fd6e2eb579cf79ab0a696f0d0f68deb.setContent(html_cb90dc6f20e0c749d9cc6ab7023166a6);
+            
+        
+
+        marker_912afcbf906ae27db6f879d1a0e4cef8.bindPopup(popup_0fd6e2eb579cf79ab0a696f0d0f68deb)
+        ;
+
+        
+    
+    
+                marker_912afcbf906ae27db6f879d1a0e4cef8.setIcon(icon_2e6ab5b4097ffe846d91be393d00517c);
+            
+    
+            var marker_419bc36415b0b923a29ba23f76686bde = L.marker(
+                [37.77863000000008, -122.41682999999995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_2700fb5e94404f0049ebe70cafe93c1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98515b24c4133c22fecb23d86f72320b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_caf097627ba5bb7e897e0c69e91c9082 = $(`<div id="html_caf097627ba5bb7e897e0c69e91c9082" style="width: 100.0%; height: 100.0%;"><b>CIVIC CENTER</b><br>Citations: 4,038</div>`)[0];
+                popup_98515b24c4133c22fecb23d86f72320b.setContent(html_caf097627ba5bb7e897e0c69e91c9082);
+            
+        
+
+        marker_419bc36415b0b923a29ba23f76686bde.bindPopup(popup_98515b24c4133c22fecb23d86f72320b)
+        ;
+
+        
+    
+    
+                marker_419bc36415b0b923a29ba23f76686bde.setIcon(icon_2700fb5e94404f0049ebe70cafe93c1d);
+            
+    
+            var marker_e3317ceef0d550af765406a14d525b0a = L.marker(
+                [37.79361143800003, -122.39634470299995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_d2bfb72110363fb50a369f76bcbb08c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58df25c3bcd9f46ee5671045f89571f2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ae0aeaad0a9e6ed073a2e3ea04ea31a3 = $(`<div id="html_ae0aeaad0a9e6ed073a2e3ea04ea31a3" style="width: 100.0%; height: 100.0%;"><b>50 DRUMM</b><br>Citations: 3,848</div>`)[0];
+                popup_58df25c3bcd9f46ee5671045f89571f2.setContent(html_ae0aeaad0a9e6ed073a2e3ea04ea31a3);
+            
+        
+
+        marker_e3317ceef0d550af765406a14d525b0a.bindPopup(popup_58df25c3bcd9f46ee5671045f89571f2)
+        ;
+
+        
+    
+    
+                marker_e3317ceef0d550af765406a14d525b0a.setIcon(icon_d2bfb72110363fb50a369f76bcbb08c2);
+            
+    
+            var marker_0dffbd461bc68f5f7fca18e6b31cca4d = L.marker(
+                [37.786955601000045, -122.40813079399999],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_3611f0538dbcad969ddd60fbd8fdaf83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f885f1116a707298c2ef241a8356e78 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6891196c11048c6ee3edb18f4e726d81 = $(`<div id="html_6891196c11048c6ee3edb18f4e726d81" style="width: 100.0%; height: 100.0%;"><b>POWELL</b><br>Citations: 3,659</div>`)[0];
+                popup_0f885f1116a707298c2ef241a8356e78.setContent(html_6891196c11048c6ee3edb18f4e726d81);
+            
+        
+
+        marker_0dffbd461bc68f5f7fca18e6b31cca4d.bindPopup(popup_0f885f1116a707298c2ef241a8356e78)
+        ;
+
+        
+    
+    
+                marker_0dffbd461bc68f5f7fca18e6b31cca4d.setIcon(icon_3611f0538dbcad969ddd60fbd8fdaf83);
+            
+    
+            var marker_365544a3d150ef494f7ccb9af25ff361 = L.marker(
+                [37.770808619000036, -122.38642706099995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_9f2f3961c4f1c5aea8712848754c6225 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81196f006dca72d25d132d2475065fb8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2f1833d4a1e2da6f83aa83f1484ce831 = $(`<div id="html_2f1833d4a1e2da6f83aa83f1484ce831" style="width: 100.0%; height: 100.0%;"><b>501 TERRY A FRANCOIS BLVD</b><br>Citations: 3,532</div>`)[0];
+                popup_81196f006dca72d25d132d2475065fb8.setContent(html_2f1833d4a1e2da6f83aa83f1484ce831);
+            
+        
+
+        marker_365544a3d150ef494f7ccb9af25ff361.bindPopup(popup_81196f006dca72d25d132d2475065fb8)
+        ;
+
+        
+    
+    
+                marker_365544a3d150ef494f7ccb9af25ff361.setIcon(icon_9f2f3961c4f1c5aea8712848754c6225);
+            
+    
+            var marker_79bd30d568f675a5a3cb92dbe53050a9 = L.marker(
+                [37.77997014600004, -122.46958976399998],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_e6e354bddf989131a200255f34980a47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e26584dc148f9eb593cfec1ddd0ae5e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8bf6fb6df8dede0c7853121e507d3cae = $(`<div id="html_8bf6fb6df8dede0c7853121e507d3cae" style="width: 100.0%; height: 100.0%;"><b>11TH</b><br>Citations: 3,464</div>`)[0];
+                popup_3e26584dc148f9eb593cfec1ddd0ae5e.setContent(html_8bf6fb6df8dede0c7853121e507d3cae);
+            
+        
+
+        marker_79bd30d568f675a5a3cb92dbe53050a9.bindPopup(popup_3e26584dc148f9eb593cfec1ddd0ae5e)
+        ;
+
+        
+    
+    
+                marker_79bd30d568f675a5a3cb92dbe53050a9.setIcon(icon_e6e354bddf989131a200255f34980a47);
+            
+    
+            var marker_b60d5fda3c5a6074ed244c1e47e1083b = L.marker(
+                [37.79361143800003, -122.39634470299995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_4628db0b0c1803f03b0202d2f9822b71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0709085047c1c5ef6e03ca408d3e10e0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c87627dc32837592f62d5517719db27d = $(`<div id="html_c87627dc32837592f62d5517719db27d" style="width: 100.0%; height: 100.0%;"><b>50 DRUMM ST</b><br>Citations: 2,934</div>`)[0];
+                popup_0709085047c1c5ef6e03ca408d3e10e0.setContent(html_c87627dc32837592f62d5517719db27d);
+            
+        
+
+        marker_b60d5fda3c5a6074ed244c1e47e1083b.bindPopup(popup_0709085047c1c5ef6e03ca408d3e10e0)
+        ;
+
+        
+    
+    
+                marker_b60d5fda3c5a6074ed244c1e47e1083b.setIcon(icon_4628db0b0c1803f03b0202d2f9822b71);
+            
+    
+            var marker_00341500a3ffd4f5558e399a11bd5b96 = L.marker(
+                [37.777120000000025, -122.41963999999996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_cd31eed8b0518ab8eaac5e1349d6d72d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0152a0431e49f01ed28183e121921833 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2d178e988baef9b0a8fcd20dcde568b7 = $(`<div id="html_2d178e988baef9b0a8fcd20dcde568b7" style="width: 100.0%; height: 100.0%;"><b>MEZZ</b><br>Citations: 2,898</div>`)[0];
+                popup_0152a0431e49f01ed28183e121921833.setContent(html_2d178e988baef9b0a8fcd20dcde568b7);
+            
+        
+
+        marker_00341500a3ffd4f5558e399a11bd5b96.bindPopup(popup_0152a0431e49f01ed28183e121921833)
+        ;
+
+        
+    
+    
+                marker_00341500a3ffd4f5558e399a11bd5b96.setIcon(icon_cd31eed8b0518ab8eaac5e1349d6d72d);
+            
+    
+            var marker_aaea9fd9cf11c9f6665e45e8c155c101 = L.marker(
+                [37.776536270000065, -122.39560939499995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_e7b93ac66a0ccea05a2a0a20ae15c3e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e11417dc51380688b4461e5581ee018 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_10508dbeb2e52f03bb9ad05029b76748 = $(`<div id="html_10508dbeb2e52f03bb9ad05029b76748" style="width: 100.0%; height: 100.0%;"><b>331 TOWNSEND ST</b><br>Citations: 2,723</div>`)[0];
+                popup_2e11417dc51380688b4461e5581ee018.setContent(html_10508dbeb2e52f03bb9ad05029b76748);
+            
+        
+
+        marker_aaea9fd9cf11c9f6665e45e8c155c101.bindPopup(popup_2e11417dc51380688b4461e5581ee018)
+        ;
+
+        
+    
+    
+                marker_aaea9fd9cf11c9f6665e45e8c155c101.setIcon(icon_e7b93ac66a0ccea05a2a0a20ae15c3e3);
+            
+    
+            var marker_470c3e2cd8b224b0e4ec8be545c05103 = L.marker(
+                [37.80467703200003, -122.40514059299994],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_3d7452a9be9bca39b589b25b293c303e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ebea182af3a8478fd4ac8db536f4ff2a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c5f17d5e5fb1ff417704a2ea7b2d8b18 = $(`<div id="html_c5f17d5e5fb1ff417704a2ea7b2d8b18" style="width: 100.0%; height: 100.0%;"><b>MONTGOMERY</b><br>Citations: 2,580</div>`)[0];
+                popup_ebea182af3a8478fd4ac8db536f4ff2a.setContent(html_c5f17d5e5fb1ff417704a2ea7b2d8b18);
+            
+        
+
+        marker_470c3e2cd8b224b0e4ec8be545c05103.bindPopup(popup_ebea182af3a8478fd4ac8db536f4ff2a)
+        ;
+
+        
+    
+    
+                marker_470c3e2cd8b224b0e4ec8be545c05103.setIcon(icon_3d7452a9be9bca39b589b25b293c303e);
+            
+    
+            var marker_491d1f286252dbc3c0a1b6527ad0da96 = L.marker(
+                [37.78645900400005, -122.40554597299996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_27d5191605cb1bcdf057eba8e2d85e87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e89cb4ab292c1dcbaace2cb00c8ceb29 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_aa657a40897aa4117c76fd922c492710 = $(`<div id="html_aa657a40897aa4117c76fd922c492710" style="width: 100.0%; height: 100.0%;"><b>780 MARKET</b><br>Citations: 2,511</div>`)[0];
+                popup_e89cb4ab292c1dcbaace2cb00c8ceb29.setContent(html_aa657a40897aa4117c76fd922c492710);
+            
+        
+
+        marker_491d1f286252dbc3c0a1b6527ad0da96.bindPopup(popup_e89cb4ab292c1dcbaace2cb00c8ceb29)
+        ;
+
+        
+    
+    
+                marker_491d1f286252dbc3c0a1b6527ad0da96.setIcon(icon_27d5191605cb1bcdf057eba8e2d85e87);
+            
+    
+            var marker_106c4510f392671df88f12c1306d0f22 = L.marker(
+                [37.759423232000074, -122.42821094699997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_e31868478e97445c1081dc9c95be8870 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a80c84c130a213f523fd8e62288ac9b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_384ae55197ee0d64278a271422639ef9 = $(`<div id="html_384ae55197ee0d64278a271422639ef9" style="width: 100.0%; height: 100.0%;"><b>CHURCH</b><br>Citations: 2,202</div>`)[0];
+                popup_9a80c84c130a213f523fd8e62288ac9b.setContent(html_384ae55197ee0d64278a271422639ef9);
+            
+        
+
+        marker_106c4510f392671df88f12c1306d0f22.bindPopup(popup_9a80c84c130a213f523fd8e62288ac9b)
+        ;
+
+        
+    
+    
+                marker_106c4510f392671df88f12c1306d0f22.setIcon(icon_e31868478e97445c1081dc9c95be8870);
+            
+    
+            var marker_fb3aba181e5c942bc16c3ac21bdc3307 = L.marker(
+                [37.74850599800004, -122.42114000099997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_41498046b679e54b1e44ff1f5e553b2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c138d354a99f98d9ce6824fe0e1243a0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6f038194c99e17d9c247b76b3948331e = $(`<div id="html_6f038194c99e17d9c247b76b3948331e" style="width: 100.0%; height: 100.0%;"><b>1500 VALENCIA ST</b><br>Citations: 2,120</div>`)[0];
+                popup_c138d354a99f98d9ce6824fe0e1243a0.setContent(html_6f038194c99e17d9c247b76b3948331e);
+            
+        
+
+        marker_fb3aba181e5c942bc16c3ac21bdc3307.bindPopup(popup_c138d354a99f98d9ce6824fe0e1243a0)
+        ;
+
+        
+    
+    
+                marker_fb3aba181e5c942bc16c3ac21bdc3307.setIcon(icon_41498046b679e54b1e44ff1f5e553b2c);
+            
+    
+            var marker_fcffa923ea6e66234082025f6aad8b49 = L.marker(
+                [37.74884151200007, -122.38738433299994],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_80b269241fa46517a4e130684a45798b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aee9912e8a801917343617dd674406e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_65bf3d493e24faad424944618f3a49a4 = $(`<div id="html_65bf3d493e24faad424944618f3a49a4" style="width: 100.0%; height: 100.0%;"><b>3RD</b><br>Citations: 2,074</div>`)[0];
+                popup_9aee9912e8a801917343617dd674406e.setContent(html_65bf3d493e24faad424944618f3a49a4);
+            
+        
+
+        marker_fcffa923ea6e66234082025f6aad8b49.bindPopup(popup_9aee9912e8a801917343617dd674406e)
+        ;
+
+        
+    
+    
+                marker_fcffa923ea6e66234082025f6aad8b49.setIcon(icon_80b269241fa46517a4e130684a45798b);
+            
+    
+            var marker_f5b16bfe2b1196722f6c6a40f1cfc5a7 = L.marker(
+                [37.77650928000003, -122.39564406199997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_40511449919b5553958ab0e4546a3519 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_237d9a79c9346ea1c0ec0e001e8928db = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e93308fd6fc334300881504c70469e1c = $(`<div id="html_e93308fd6fc334300881504c70469e1c" style="width: 100.0%; height: 100.0%;"><b>333 TOWNSEND STREET</b><br>Citations: 2,051</div>`)[0];
+                popup_237d9a79c9346ea1c0ec0e001e8928db.setContent(html_e93308fd6fc334300881504c70469e1c);
+            
+        
+
+        marker_f5b16bfe2b1196722f6c6a40f1cfc5a7.bindPopup(popup_237d9a79c9346ea1c0ec0e001e8928db)
+        ;
+
+        
+    
+    
+                marker_f5b16bfe2b1196722f6c6a40f1cfc5a7.setIcon(icon_40511449919b5553958ab0e4546a3519);
+            
+    
+            var marker_26c9e7e21eca623e33c5fdebecd4683b = L.marker(
+                [37.759619214000054, -122.46602234899996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_a21a94da1d4e0cc5e635d8e802e6d6b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80c0bd4a948b19587c332846719b98c0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5ae37918af53c04e5cb0b2ad3f0e672e = $(`<div id="html_5ae37918af53c04e5cb0b2ad3f0e672e" style="width: 100.0%; height: 100.0%;"><b>9TH</b><br>Citations: 2,050</div>`)[0];
+                popup_80c0bd4a948b19587c332846719b98c0.setContent(html_5ae37918af53c04e5cb0b2ad3f0e672e);
+            
+        
+
+        marker_26c9e7e21eca623e33c5fdebecd4683b.bindPopup(popup_80c0bd4a948b19587c332846719b98c0)
+        ;
+
+        
+    
+    
+                marker_26c9e7e21eca623e33c5fdebecd4683b.setIcon(icon_a21a94da1d4e0cc5e635d8e802e6d6b1);
+            
+    
+            var marker_5083fe8a9f2d7e338118287e220dd489 = L.marker(
+                [37.782620000000065, -122.40810999999997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_4cfcfc98f4e2252a54552d540f89659a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f5eb4a21b2c74733ff46e3df5555fbb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6558f771762766a1b0f41fe5f6caf4bf = $(`<div id="html_6558f771762766a1b0f41fe5f6caf4bf" style="width: 100.0%; height: 100.0%;"><b>POWELL AND MEZZANINE</b><br>Citations: 1,933</div>`)[0];
+                popup_8f5eb4a21b2c74733ff46e3df5555fbb.setContent(html_6558f771762766a1b0f41fe5f6caf4bf);
+            
+        
+
+        marker_5083fe8a9f2d7e338118287e220dd489.bindPopup(popup_8f5eb4a21b2c74733ff46e3df5555fbb)
+        ;
+
+        
+    
+    
+                marker_5083fe8a9f2d7e338118287e220dd489.setIcon(icon_4cfcfc98f4e2252a54552d540f89659a);
+            
+    
+            var marker_40656854503383c461904ba04e106b8a = L.marker(
+                [37.806846335000046, -122.40579927099998],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_096a937de6bf90176107fee152cbd11b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25250d2a0e0d3ab84d8110755940c9d0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9457f1c271d222e711a3db2543964f80 = $(`<div id="html_9457f1c271d222e711a3db2543964f80" style="width: 100.0%; height: 100.0%;"><b>1314 EMBARCADERO NORTH</b><br>Citations: 1,681</div>`)[0];
+                popup_25250d2a0e0d3ab84d8110755940c9d0.setContent(html_9457f1c271d222e711a3db2543964f80);
+            
+        
+
+        marker_40656854503383c461904ba04e106b8a.bindPopup(popup_25250d2a0e0d3ab84d8110755940c9d0)
+        ;
+
+        
+    
+    
+                marker_40656854503383c461904ba04e106b8a.setIcon(icon_096a937de6bf90176107fee152cbd11b);
+            
+    
+            var marker_fd880cb871e343d020352a718cf8ce9f = L.marker(
+                [37.777120000000025, -122.41963999999996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_deccf7512ecd281185f023c1852a4380 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15f4bfe4307160c162db2cc2858d7547 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_499865ca24ab1ea4432dedddcb2cb88f = $(`<div id="html_499865ca24ab1ea4432dedddcb2cb88f" style="width: 100.0%; height: 100.0%;"><b>SEC MEZZ</b><br>Citations: 1,679</div>`)[0];
+                popup_15f4bfe4307160c162db2cc2858d7547.setContent(html_499865ca24ab1ea4432dedddcb2cb88f);
+            
+        
+
+        marker_fd880cb871e343d020352a718cf8ce9f.bindPopup(popup_15f4bfe4307160c162db2cc2858d7547)
+        ;
+
+        
+    
+    
+                marker_fd880cb871e343d020352a718cf8ce9f.setIcon(icon_deccf7512ecd281185f023c1852a4380);
+            
+    
+            var marker_2ea3b8ce1506c1596e1878f96300340f = L.marker(
+                [37.80815989700005, -122.408961525],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_ef4bbdc0a3388539630d4398880c042b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a87d92fb33f23e7c67d3ecbf383f285a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b9373814b9f29a647c77c2f2d4bd2d4d = $(`<div id="html_b9373814b9f29a647c77c2f2d4bd2d4d" style="width: 100.0%; height: 100.0%;"><b>1596 EMBARCADERO NORTH</b><br>Citations: 1,652</div>`)[0];
+                popup_a87d92fb33f23e7c67d3ecbf383f285a.setContent(html_b9373814b9f29a647c77c2f2d4bd2d4d);
+            
+        
+
+        marker_2ea3b8ce1506c1596e1878f96300340f.bindPopup(popup_a87d92fb33f23e7c67d3ecbf383f285a)
+        ;
+
+        
+    
+    
+                marker_2ea3b8ce1506c1596e1878f96300340f.setIcon(icon_ef4bbdc0a3388539630d4398880c042b);
+            
+    
+            var marker_51963b99e033bc5a0613413d6a4a9dc9 = L.marker(
+                [37.777120000000025, -122.41963999999996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_8b1657e13d360cf3ad160c54a6479583 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20101eb21a534a7ec10184fa368102a3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dc38d2977b5369fe72c1921cc03af232 = $(`<div id="html_dc38d2977b5369fe72c1921cc03af232" style="width: 100.0%; height: 100.0%;"><b>PLATFORM</b><br>Citations: 1,590</div>`)[0];
+                popup_20101eb21a534a7ec10184fa368102a3.setContent(html_dc38d2977b5369fe72c1921cc03af232);
+            
+        
+
+        marker_51963b99e033bc5a0613413d6a4a9dc9.bindPopup(popup_20101eb21a534a7ec10184fa368102a3)
+        ;
+
+        
+    
+    
+                marker_51963b99e033bc5a0613413d6a4a9dc9.setIcon(icon_8b1657e13d360cf3ad160c54a6479583);
+            
+    
+            var marker_a4f49c3b0b25a790091eb3e5991c58d5 = L.marker(
+                [37.78125888200003, -122.463237575],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_6c9eca9820c0808a80187d58fd8b4b8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b0d238cc00a9eb0e2640f36cbb86117 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_345476f24c62ccced0e922bcb1106e81 = $(`<div id="html_345476f24c62ccced0e922bcb1106e81" style="width: 100.0%; height: 100.0%;"><b>5TH</b><br>Citations: 1,590</div>`)[0];
+                popup_4b0d238cc00a9eb0e2640f36cbb86117.setContent(html_345476f24c62ccced0e922bcb1106e81);
+            
+        
+
+        marker_a4f49c3b0b25a790091eb3e5991c58d5.bindPopup(popup_4b0d238cc00a9eb0e2640f36cbb86117)
+        ;
+
+        
+    
+    
+                marker_a4f49c3b0b25a790091eb3e5991c58d5.setIcon(icon_6c9eca9820c0808a80187d58fd8b4b8e);
+            
+    
+            var marker_a30ee408ddcee5be68ac929650775fe1 = L.marker(
+                [37.776536270000065, -122.39560939499995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_5aa09f85d839b957bbb227ede2ef02ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_155dc5bb9862f04e9d05178ea187bfa4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7787ab50c19b1b8cd7fec274e822593c = $(`<div id="html_7787ab50c19b1b8cd7fec274e822593c" style="width: 100.0%; height: 100.0%;"><b>331 TOWNSEND STREET</b><br>Citations: 1,546</div>`)[0];
+                popup_155dc5bb9862f04e9d05178ea187bfa4.setContent(html_7787ab50c19b1b8cd7fec274e822593c);
+            
+        
+
+        marker_a30ee408ddcee5be68ac929650775fe1.bindPopup(popup_155dc5bb9862f04e9d05178ea187bfa4)
+        ;
+
+        
+    
+    
+                marker_a30ee408ddcee5be68ac929650775fe1.setIcon(icon_5aa09f85d839b957bbb227ede2ef02ff);
+            
+    
+            var marker_bd93ddcdb4f277ba7bbffeaa888c844c = L.marker(
+                [37.77687199300004, -122.39555801399996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_ee510fee61aae233e6292a5ffb4fbf32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4534c741eccea0cd03c00b70a0a4c245 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_be33e223b1925820127d59fac690d4b3 = $(`<div id="html_be33e223b1925820127d59fac690d4b3" style="width: 100.0%; height: 100.0%;"><b>310 TOWNSEND ST</b><br>Citations: 1,394</div>`)[0];
+                popup_4534c741eccea0cd03c00b70a0a4c245.setContent(html_be33e223b1925820127d59fac690d4b3);
+            
+        
+
+        marker_bd93ddcdb4f277ba7bbffeaa888c844c.bindPopup(popup_4534c741eccea0cd03c00b70a0a4c245)
+        ;
+
+        
+    
+    
+                marker_bd93ddcdb4f277ba7bbffeaa888c844c.setIcon(icon_ee510fee61aae233e6292a5ffb4fbf32);
+            
+    
+            var marker_471c2b730081103ccc96d0b1c59e3bfd = L.marker(
+                [37.774535746000026, -122.42580046799998],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_8c488eebc066d7ab0e345f00cb35c80b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4faf9d9c4d6aa1cf185f2623a26555cb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4c19f82631f4278b3915eb998b3f4780 = $(`<div id="html_4c19f82631f4278b3915eb998b3f4780" style="width: 100.0%; height: 100.0%;"><b>399 OAK ST</b><br>Citations: 1,312</div>`)[0];
+                popup_4faf9d9c4d6aa1cf185f2623a26555cb.setContent(html_4c19f82631f4278b3915eb998b3f4780);
+            
+        
+
+        marker_471c2b730081103ccc96d0b1c59e3bfd.bindPopup(popup_4faf9d9c4d6aa1cf185f2623a26555cb)
+        ;
+
+        
+    
+    
+                marker_471c2b730081103ccc96d0b1c59e3bfd.setIcon(icon_8c488eebc066d7ab0e345f00cb35c80b);
+            
+    
+            var marker_bd7f2ea767fa39d7f4b911a77c155f30 = L.marker(
+                [37.77940504600008, -122.41841990599994],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_a2537d271466d1a0244ede13c8188488 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a542e32f3083edd1db2617ff6fd200c6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ec619f27046c282633e7222579d508a9 = $(`<div id="html_ec619f27046c282633e7222579d508a9" style="width: 100.0%; height: 100.0%;"><b>CARLTON B GOODLETT</b><br>Citations: 1,287</div>`)[0];
+                popup_a542e32f3083edd1db2617ff6fd200c6.setContent(html_ec619f27046c282633e7222579d508a9);
+            
+        
+
+        marker_bd7f2ea767fa39d7f4b911a77c155f30.bindPopup(popup_a542e32f3083edd1db2617ff6fd200c6)
+        ;
+
+        
+    
+    
+                marker_bd7f2ea767fa39d7f4b911a77c155f30.setIcon(icon_a2537d271466d1a0244ede13c8188488);
+            
+    
+            var marker_5ef914af8ad5c9a6d906f83c03d72b5b = L.marker(
+                [37.782620000000065, -122.40810999999997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_4c13888a41d7c42340571f178a76c0c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86bcd44428e1a003d97191485687fdf1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_af8e10490a96a1f8fcb7fe41ae31b712 = $(`<div id="html_af8e10490a96a1f8fcb7fe41ae31b712" style="width: 100.0%; height: 100.0%;"><b>POWELL MEZZANINE</b><br>Citations: 1,254</div>`)[0];
+                popup_86bcd44428e1a003d97191485687fdf1.setContent(html_af8e10490a96a1f8fcb7fe41ae31b712);
+            
+        
+
+        marker_5ef914af8ad5c9a6d906f83c03d72b5b.bindPopup(popup_86bcd44428e1a003d97191485687fdf1)
+        ;
+
+        
+    
+    
+                marker_5ef914af8ad5c9a6d906f83c03d72b5b.setIcon(icon_4c13888a41d7c42340571f178a76c0c4);
+            
+    
+            var marker_464043473e3cea75520373698cef7625 = L.marker(
+                [37.808425681000074, -122.41157996299995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_eb28dc414229ba4c7a78738a38804f9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cbdf7d518152904b181ef49e9c2fbf3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_911df2db4e69d4e7b803c33df41bef76 = $(`<div id="html_911df2db4e69d4e7b803c33df41bef76" style="width: 100.0%; height: 100.0%;"><b>EMBARCADERO MEZZANINE</b><br>Citations: 1,251</div>`)[0];
+                popup_4cbdf7d518152904b181ef49e9c2fbf3.setContent(html_911df2db4e69d4e7b803c33df41bef76);
+            
+        
+
+        marker_464043473e3cea75520373698cef7625.bindPopup(popup_4cbdf7d518152904b181ef49e9c2fbf3)
+        ;
+
+        
+    
+    
+                marker_464043473e3cea75520373698cef7625.setIcon(icon_eb28dc414229ba4c7a78738a38804f9b);
+            
+    
+            var marker_dd79ecbed6ab3242b4cd4e656536468a = L.marker(
+                [37.78766004700003, -122.40345988499996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_ec55e032345f19f47cf0a44583686747 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16b88b9095b9511070bf225cabe69c66 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6ac4c0ed912bde0a9350e58662bec143 = $(`<div id="html_6ac4c0ed912bde0a9350e58662bec143" style="width: 100.0%; height: 100.0%;"><b>MARKET AT 3RD</b><br>Citations: 1,228</div>`)[0];
+                popup_16b88b9095b9511070bf225cabe69c66.setContent(html_6ac4c0ed912bde0a9350e58662bec143);
+            
+        
+
+        marker_dd79ecbed6ab3242b4cd4e656536468a.bindPopup(popup_16b88b9095b9511070bf225cabe69c66)
+        ;
+
+        
+    
+    
+                marker_dd79ecbed6ab3242b4cd4e656536468a.setIcon(icon_ec55e032345f19f47cf0a44583686747);
+            
+    
+            var marker_64c42d037e60b60a5216981c469a2131 = L.marker(
+                [37.777120000000025, -122.41963999999996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_943e8b85b0c1167a9ab69b45584d95fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36f1d1fa67d5190a657cb69d1ced3f1f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4dc8fc32bec0ff4340b4f18a5ddd81a7 = $(`<div id="html_4dc8fc32bec0ff4340b4f18a5ddd81a7" style="width: 100.0%; height: 100.0%;"><b>EAST LOT</b><br>Citations: 1,224</div>`)[0];
+                popup_36f1d1fa67d5190a657cb69d1ced3f1f.setContent(html_4dc8fc32bec0ff4340b4f18a5ddd81a7);
+            
+        
+
+        marker_64c42d037e60b60a5216981c469a2131.bindPopup(popup_36f1d1fa67d5190a657cb69d1ced3f1f)
+        ;
+
+        
+    
+    
+                marker_64c42d037e60b60a5216981c469a2131.setIcon(icon_943e8b85b0c1167a9ab69b45584d95fd);
+            
+    
+            var marker_414068369f922ea83dccf940b7f8874b = L.marker(
+                [37.791427000000056, -122.40103801799995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_9628c7eeff413b6cadba52988b2890b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b24831c0451e577f975062c229c000ae = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_31b706af5c800e626378e17499445ee0 = $(`<div id="html_31b706af5c800e626378e17499445ee0" style="width: 100.0%; height: 100.0%;"><b>200 BUSH ST</b><br>Citations: 1,211</div>`)[0];
+                popup_b24831c0451e577f975062c229c000ae.setContent(html_31b706af5c800e626378e17499445ee0);
+            
+        
+
+        marker_414068369f922ea83dccf940b7f8874b.bindPopup(popup_b24831c0451e577f975062c229c000ae)
+        ;
+
+        
+    
+    
+                marker_414068369f922ea83dccf940b7f8874b.setIcon(icon_9628c7eeff413b6cadba52988b2890b6);
+            
+    
+            var marker_c679fd81ed762f598a587462effef535 = L.marker(
+                [37.78097573600007, -122.46428037499999],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_712cf3d5034a50443dd977d397651e03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b64c123fae794c6a6403c4c86235e3f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_247edbc0e64541564affc5cf92e12e85 = $(`<div id="html_247edbc0e64541564affc5cf92e12e85" style="width: 100.0%; height: 100.0%;"><b>6TH</b><br>Citations: 1,200</div>`)[0];
+                popup_5b64c123fae794c6a6403c4c86235e3f.setContent(html_247edbc0e64541564affc5cf92e12e85);
+            
+        
+
+        marker_c679fd81ed762f598a587462effef535.bindPopup(popup_5b64c123fae794c6a6403c4c86235e3f)
+        ;
+
+        
+    
+    
+                marker_c679fd81ed762f598a587462effef535.setIcon(icon_712cf3d5034a50443dd977d397651e03);
+            
+    
+            var marker_3eaf06cb6157290385c995a860c917c5 = L.marker(
+                [37.776843402000054, -122.44580961499997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_63df448b891e77c1b283c96540c7bc49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4f3d22d55ff711b172ecdc694c5c275 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b477dcf32405a29669be17758f6be8b5 = $(`<div id="html_b477dcf32405a29669be17758f6be8b5" style="width: 100.0%; height: 100.0%;"><b>MCALLISTER</b><br>Citations: 1,158</div>`)[0];
+                popup_f4f3d22d55ff711b172ecdc694c5c275.setContent(html_b477dcf32405a29669be17758f6be8b5);
+            
+        
+
+        marker_3eaf06cb6157290385c995a860c917c5.bindPopup(popup_f4f3d22d55ff711b172ecdc694c5c275)
+        ;
+
+        
+    
+    
+                marker_3eaf06cb6157290385c995a860c917c5.setIcon(icon_63df448b891e77c1b283c96540c7bc49);
+            
+    
+            var marker_90eaaa393b8434dff103e40692e6ec37 = L.marker(
+                [37.756327990000045, -122.40581695999998],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_a04265dc9ae7cdd91fdaf2bcee672358 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01582e198731cbd4448abf5a817b510f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_65943af27208fe576116a5f85598dc24 = $(`<div id="html_65943af27208fe576116a5f85598dc24" style="width: 100.0%; height: 100.0%;"><b>1001 POTRERO AVE</b><br>Citations: 1,152</div>`)[0];
+                popup_01582e198731cbd4448abf5a817b510f.setContent(html_65943af27208fe576116a5f85598dc24);
+            
+        
+
+        marker_90eaaa393b8434dff103e40692e6ec37.bindPopup(popup_01582e198731cbd4448abf5a817b510f)
+        ;
+
+        
+    
+    
+                marker_90eaaa393b8434dff103e40692e6ec37.setIcon(icon_a04265dc9ae7cdd91fdaf2bcee672358);
+            
+    
+            var marker_1186c2452fb7ea9cc01569690bc8c29f = L.marker(
+                [37.790163009000025, -122.39754301599999],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_fe9cb0de13669ea7c35b17c438b98c83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11a781f80a5db3f15a5503457ea56a89 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f7a985dc769df7779ce71479c85682bc = $(`<div id="html_f7a985dc769df7779ce71479c85682bc" style="width: 100.0%; height: 100.0%;"><b>456 MISSION ST</b><br>Citations: 1,152</div>`)[0];
+                popup_11a781f80a5db3f15a5503457ea56a89.setContent(html_f7a985dc769df7779ce71479c85682bc);
+            
+        
+
+        marker_1186c2452fb7ea9cc01569690bc8c29f.bindPopup(popup_11a781f80a5db3f15a5503457ea56a89)
+        ;
+
+        
+    
+    
+                marker_1186c2452fb7ea9cc01569690bc8c29f.setIcon(icon_fe9cb0de13669ea7c35b17c438b98c83);
+            
+    
+            var marker_14f8ad0436daa6703a90d60c1d36904b = L.marker(
+                [37.764293156000065, -122.43191616599995],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_55b9c3d6daccaa0593fd31ee6b2b257c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f281f351a3e33740c6f926ae0a7bb200 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_53f1731cdb57bca496eabd7094dc7e80 = $(`<div id="html_53f1731cdb57bca496eabd7094dc7e80" style="width: 100.0%; height: 100.0%;"><b>16TH</b><br>Citations: 1,126</div>`)[0];
+                popup_f281f351a3e33740c6f926ae0a7bb200.setContent(html_53f1731cdb57bca496eabd7094dc7e80);
+            
+        
+
+        marker_14f8ad0436daa6703a90d60c1d36904b.bindPopup(popup_f281f351a3e33740c6f926ae0a7bb200)
+        ;
+
+        
+    
+    
+                marker_14f8ad0436daa6703a90d60c1d36904b.setIcon(icon_55b9c3d6daccaa0593fd31ee6b2b257c);
+            
+    
+            var marker_b1f0059f2999cf22ad51234ba6aa3b6b = L.marker(
+                [37.761103999000056, -122.43532000199997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_67f9dcd46d8b732ba7c054be342121a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5437d82118bc6f8a61bffcc2f6e58f8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e9f6cc0ca935f1705d564363225de42f = $(`<div id="html_e9f6cc0ca935f1705d564363225de42f" style="width: 100.0%; height: 100.0%;"><b>490 CASTRO ST</b><br>Citations: 1,121</div>`)[0];
+                popup_f5437d82118bc6f8a61bffcc2f6e58f8.setContent(html_e9f6cc0ca935f1705d564363225de42f);
+            
+        
+
+        marker_b1f0059f2999cf22ad51234ba6aa3b6b.bindPopup(popup_f5437d82118bc6f8a61bffcc2f6e58f8)
+        ;
+
+        
+    
+    
+                marker_b1f0059f2999cf22ad51234ba6aa3b6b.setIcon(icon_67f9dcd46d8b732ba7c054be342121a0);
+            
+    
+            var marker_51cfedeab79e168755ae23d2e065a51f = L.marker(
+                [37.77650928000003, -122.39564406199997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_2800c4e0130fd78a0bccd96661f0d164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7b88e68b852c1e1f4ff7b766db52008 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_184dfac8968fa8fc7e2ee745356113ea = $(`<div id="html_184dfac8968fa8fc7e2ee745356113ea" style="width: 100.0%; height: 100.0%;"><b>333 TOWNSEND</b><br>Citations: 1,094</div>`)[0];
+                popup_f7b88e68b852c1e1f4ff7b766db52008.setContent(html_184dfac8968fa8fc7e2ee745356113ea);
+            
+        
+
+        marker_51cfedeab79e168755ae23d2e065a51f.bindPopup(popup_f7b88e68b852c1e1f4ff7b766db52008)
+        ;
+
+        
+    
+    
+                marker_51cfedeab79e168755ae23d2e065a51f.setIcon(icon_2800c4e0130fd78a0bccd96661f0d164);
+            
+    
+            var marker_ec3d44c2652ebd604b439bdc79981a69 = L.marker(
+                [37.77650928000003, -122.39564406199997],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_a42453ed6cf61136ce5988ce37404284 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7419da6ee6ca1ce3c47447e3196e314 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f3735c27f249d1457c1f8dba0279f957 = $(`<div id="html_f3735c27f249d1457c1f8dba0279f957" style="width: 100.0%; height: 100.0%;"><b>333 TOWNSEND ST</b><br>Citations: 1,083</div>`)[0];
+                popup_f7419da6ee6ca1ce3c47447e3196e314.setContent(html_f3735c27f249d1457c1f8dba0279f957);
+            
+        
+
+        marker_ec3d44c2652ebd604b439bdc79981a69.bindPopup(popup_f7419da6ee6ca1ce3c47447e3196e314)
+        ;
+
+        
+    
+    
+                marker_ec3d44c2652ebd604b439bdc79981a69.setIcon(icon_a42453ed6cf61136ce5988ce37404284);
+            
+    
+            var marker_773fa7aa01ce2bde9e74462247edd6d5 = L.marker(
+                [37.739900000000034, -122.46748999999994],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_445b581457fe99fbcae9f6cb32f35185 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9d732c2046e7785acfa8501d27fbfa5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a09b6b3444ea335fca7f69278e835594 = $(`<div id="html_a09b6b3444ea335fca7f69278e835594" style="width: 100.0%; height: 100.0%;"><b>WEST PORTAL</b><br>Citations: 1,062</div>`)[0];
+                popup_d9d732c2046e7785acfa8501d27fbfa5.setContent(html_a09b6b3444ea335fca7f69278e835594);
+            
+        
+
+        marker_773fa7aa01ce2bde9e74462247edd6d5.bindPopup(popup_d9d732c2046e7785acfa8501d27fbfa5)
+        ;
+
+        
+    
+    
+                marker_773fa7aa01ce2bde9e74462247edd6d5.setIcon(icon_445b581457fe99fbcae9f6cb32f35185);
+            
+    
+            var marker_aceeee666edb8c200756c44345d2dbc8 = L.marker(
+                [37.727733225000065, -122.474997713],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_c63ce23d1c4b9bf72ba6ab5000286a27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6c2a3512b29852cfb040a4bc4b12cdc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ac8e90803b6aa6fc5e7d51375766a035 = $(`<div id="html_ac8e90803b6aa6fc5e7d51375766a035" style="width: 100.0%; height: 100.0%;"><b>19TH</b><br>Citations: 1,054</div>`)[0];
+                popup_c6c2a3512b29852cfb040a4bc4b12cdc.setContent(html_ac8e90803b6aa6fc5e7d51375766a035);
+            
+        
+
+        marker_aceeee666edb8c200756c44345d2dbc8.bindPopup(popup_c6c2a3512b29852cfb040a4bc4b12cdc)
+        ;
+
+        
+    
+    
+                marker_aceeee666edb8c200756c44345d2dbc8.setIcon(icon_c63ce23d1c4b9bf72ba6ab5000286a27);
+            
+    
+            var marker_149d596550686b413ef861ad1b90ec61 = L.marker(
+                [37.78496746500008, -122.41956971599996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_d135a6a41adcb3fa514fdc0250805c6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c23b6671d26acd0e5d5731b2489433d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_36f8641c194b024ca7432830eccbb122 = $(`<div id="html_36f8641c194b024ca7432830eccbb122" style="width: 100.0%; height: 100.0%;"><b>OFARRELL</b><br>Citations: 1,017</div>`)[0];
+                popup_9c23b6671d26acd0e5d5731b2489433d.setContent(html_36f8641c194b024ca7432830eccbb122);
+            
+        
+
+        marker_149d596550686b413ef861ad1b90ec61.bindPopup(popup_9c23b6671d26acd0e5d5731b2489433d)
+        ;
+
+        
+    
+    
+                marker_149d596550686b413ef861ad1b90ec61.setIcon(icon_d135a6a41adcb3fa514fdc0250805c6f);
+            
+    
+            var marker_6533645d6dfcae1b36511af02c1d1930 = L.marker(
+                [37.77015000000006, -122.44532999999996],
+                {
+}
+            ).addTo(marker_cluster_c7ec6ef7d17d84acac860625495a3f99);
+        
+    
+            var icon_d504625109e3d19ccc5af07ad9e82fee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82b1c41bc8bcd23d5294ee6dca39a050 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_15171a645fd81bc4e079425d9dd46a82 = $(`<div id="html_15171a645fd81bc4e079425d9dd46a82" style="width: 100.0%; height: 100.0%;"><b>HAIGHT</b><br>Citations: 1,009</div>`)[0];
+                popup_82b1c41bc8bcd23d5294ee6dca39a050.setContent(html_15171a645fd81bc4e079425d9dd46a82);
+            
+        
+
+        marker_6533645d6dfcae1b36511af02c1d1930.bindPopup(popup_82b1c41bc8bcd23d5294ee6dca39a050)
+        ;
+
+        
+    
+    
+                marker_6533645d6dfcae1b36511af02c1d1930.setIcon(icon_d504625109e3d19ccc5af07ad9e82fee);
+            
+    
+            marker_cluster_c7ec6ef7d17d84acac860625495a3f99.addTo(map_3e2e7b25c91c233806a0481fda86a37d);
+        
+    
+            var layer_control_9e5b8f06fa8f40d3687420c7044b2140_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_5164237ebfeb8f4b47fa990327f3e383,
+                },
+                overlays :  {
+                    "Top 50 Hotspot Streets" : marker_cluster_c7ec6ef7d17d84acac860625495a3f99,
+                },
+            };
+            let layer_control_9e5b8f06fa8f40d3687420c7044b2140 = L.control.layers(
+                layer_control_9e5b8f06fa8f40d3687420c7044b2140_layers.base_layers,
+                layer_control_9e5b8f06fa8f40d3687420c7044b2140_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_3e2e7b25c91c233806a0481fda86a37d);
+
+        
+</script>
+</html>
